@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: simple-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: simple-job
+        image: kodacme/simple-job:0.1
+        command: ["/app/job.py"]
+      restartPolicy: Never
+  completions: 2
+
