@@ -10,5 +10,4 @@ spec:
         image: kodacme/simple-job:0.1
         command: ["/app/job.py"]
       restartPolicy: Never
-  completions: 2
-
+  completions: 1  #2
